@@ -1,0 +1,34 @@
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
+
+// // https://vite.dev/config/
+// export default defineConfig({
+//     base: "/zustand-handbook/",
+//     plugins: [react()],
+// });
+
+// vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { execSync } from "node:child_process";
+
+function lastCommitISO() {
+    try {
+        // e.g. 2025-09-26T18:28:57+05:30
+        return execSync("git log -1 --format=%cI").toString().trim();
+    } catch {
+        // Fallback if git history isn't available (e.g., online sandboxes)
+        return new Date().toISOString();
+    }
+}
+
+export default defineConfig({
+    plugins: [react()],
+    base: "/zustand-handbook/",
+    define: {
+        // Build time (when Vite runs)
+        __APP_BUILD_ISO__: JSON.stringify(new Date().toISOString()),
+        // Last commit time from Git
+        __APP_COMMIT_ISO__: JSON.stringify(lastCommitISO()),
+    },
+});
