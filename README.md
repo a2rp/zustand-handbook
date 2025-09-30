@@ -1,31 +1,28 @@
-# Freelance Apps Hub
+# Zustand Handbook
 
-A compact hub of my **freelancing mini-apps** now opened up as **open source** - built for real clients (schools, students, tuitions, gyms, institutes, small orgs, developers).  
-Stack: **HTML + SCSS + JavaScript** inside each app, **React (Vite)** shell.
+Frontend-only React + styled-components project to learn and demo Zustand with real-world patterns (slices, persist, derived selectors, async, devtools, store factories).
 
-## About this hub & background
-
-Over a long career in **freelancing**, I've built dozens of small, purpose-built tools for real clients.  
-Now I'm **open-sourcing** many of those **apps and app parts** so others can learn, reuse, and adapt.
-
-**Live:** https://a2rp.github.io/freelance-apps-hub/  
-**Code:** https://github.com/a2rp/freelance-apps-hub
+**Live:** https://a2rp.github.io/zustand-handbook/home
+**Code:** https://github.com/a2rp/zustand-handbook
 
 ---
 
-## Quick start
+## What's inside
+
+-   Playground demos (counter, todos, theme, auth, cart, async, subscriptions, etc.)
+-   Recipes (persist + migrations, derived selectors, subscribeWithSelector, store factory, optimistic updates, undo/redo)
+-   Notes & Cheat Sheet (print-friendly)
+-   State Inspector (export/import/reset)
+
+## Quick Start
 
 ```bash
-# Clone
-git clone https://github.com/a2rp/freelance-apps-hub.git
-cd freelance-apps-hub
-
-# Install & run
-npm i
-npm run dev   # open the local URL
-
-# Build (for GitHub Pages)
-npm run build
-npx shx cp dist/index.html dist/404.html   # SPA refresh fix (uses npx)
-npm run deploy   # publishes to gh-pages
+git clone https://github.com/a2rp/zustand-handbook
+cd zustand-handbook
+npm ci
+npm run dev
 ```
+
+## Tech
+
+React (Vite) · React Router · styled-components · Zustand (+ persist, devtools, immer, subscribeWithSelector)
