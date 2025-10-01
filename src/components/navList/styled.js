@@ -57,16 +57,18 @@ export const Styled = {
             /* border: 1px solid #f00; */
             height: calc(100% - 40px);
             overflow: auto;
+            overflow-x: hidden;
             padding-left: 10px;
             color: #666;
 
-            li {
-                font-family: Consolas;
-                a {
-                    padding-left: 10px;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    white-space: nowrap;
-                }
+            .title {
+                white-space: nowrap;
+            }
+
+            a {
+                padding-left: 10px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                white-space: nowrap;
             }
         }
     `,
