@@ -191,6 +191,45 @@ const NavListCore = () => {
                 <NavLink to="/examples/subscribe-selector" title="subscribeWithSelector demo (coming soon)">Subscribe + Selector</NavLink>
                 <NavLink to="/examples/undo-redo" title="Temporal/history demo (coming soon)">Undo / Redo</NavLink>
 
+                {/* Basics & Selectors */}
+                <NavLink to="/examples/toggle-label" title="Toggle & label (coming soon)">Toggle & Label</NavLink>
+                <NavLink to="/examples/counter-shallow" title="Counter with shallow selector (coming soon)">Counter (Tuple + shallow)</NavLink>
+                <NavLink to="/examples/selector-identity" title="Selector identity trap (coming soon)">Selector Identity Trap</NavLink>
+                <NavLink to="/examples/derived-badge" title="Derived badge (coming soon)">Derived Badge</NavLink>
+
+                {/* Async & UX */}
+                <NavLink to="/examples/fetch-users" title="Fetch users — start/success/error (coming soon)">Fetch Users</NavLink>
+                <NavLink to="/examples/search-abort-dedupe" title="Search with abort & de-dupe (coming soon)">Search: Abort & De-dupe</NavLink>
+                <NavLink to="/examples/optimistic-rename" title="Optimistic rename + rollback (coming soon)">Optimistic Rename</NavLink>
+                <NavLink to="/examples/paginated-list" title="Paginated list & filters (coming soon)">Paginated List</NavLink>
+
+                {/* Middlewares */}
+                <NavLink to="/examples/persist-partialize" title="Persist partialization + version (coming soon)">Persist: Partialize + Version</NavLink>
+                <NavLink to="/examples/subscribe-with-selector" title="subscribeWithSelector outside React (coming soon)">subscribeWithSelector (outside React)</NavLink>
+                <NavLink to="/examples/devtools-actions" title="Devtools action naming (coming soon)">Devtools: Action Naming</NavLink>
+
+                {/* Patterns & Architecture */}
+                <NavLink to="/examples/slices-pattern" title="Slices pattern (auth/ui/cart) (coming soon)">Slices Pattern</NavLink>
+                <NavLink to="/examples/wizard-factory" title="Local store factory (wizard) (coming soon)">Wizard Factory (Local Store)</NavLink>
+                <NavLink to="/examples/modal-manager" title="Modal manager (global UI) (coming soon)">Modal Manager</NavLink>
+                <NavLink to="/examples/toast-queue" title="Toast queue (global UI) (coming soon)">Toast Queue</NavLink>
+                <NavLink to="/examples/form-validation" title="Form state + validation (coming soon)">Form + Validation</NavLink>
+                <NavLink to="/examples/cart-totals" title="Cart totals (derived vs stored) (coming soon)">Cart Totals</NavLink>
+                <NavLink to="/examples/reset-patterns" title="Reset patterns (slice/full) (coming soon)">Reset Patterns</NavLink>
+                <NavLink to="/examples/perf-overselect" title="Performance: over-selecting (coming soon)">Perf: Over-selecting</NavLink>
+
+                {/* Advanced / Misc */}
+                <NavLink to="/examples/cross-tab-sync" title="Cross-tab sync sketch (coming soon)">Cross-tab Sync</NavLink>
+                <NavLink to="/examples/ssr-notes" title="SSR/hydration notes (coming soon)">SSR / Hydration Notes</NavLink>
+                <NavLink to="/examples/testing-store" title="Testing the store (coming soon)">Testing the Store</NavLink>
+                <NavLink to="/examples/typescript-basic" title="TypeScript basics (coming soon)">TypeScript Basics</NavLink>
+
+                {/* Optional minis */}
+                <NavLink to="/examples/sidebar" title="Sidebar toggle + persisted (coming soon)">Sidebar (Persisted)</NavLink>
+                <NavLink to="/examples/theme-system" title="Theme + system preference (coming soon)">Theme + System Pref</NavLink>
+                <NavLink to="/examples/clipboard-share" title="Clipboard / Share state (coming soon)">Clipboard / Share</NavLink>
+
+
                 {/* Meta */}
                 <h3 className="title">Meta</h3>
                 <NavLink to="/changelog" title="Release notes & last updated">Changelog</NavLink>

@@ -53,6 +53,47 @@ const NotesZustandVsOthers = lazy(() => import('./pages/notes/zustandVsOthers'))
 
 const Glossary = lazy(() => import('./pages/glossary'));
 
+const ExampleCounter = lazy(() => import('./pages/examples/counter'));
+const ExamplePersistTheme = lazy(() => import('./pages/examples/persist-theme'));
+const ExampleDevtoolsTodos = lazy(() => import('./pages/examples/devtools-todos'));
+const ExampleSubscribeSelector = lazy(() => import('./pages/examples/subscribe-selector'));
+const ExampleUndoRedo = lazy(() => import('./pages/examples/undo-redo'));
+
+const ExampleToggleLabel = lazy(() => import('./pages/examples/toggle-label'));
+const ExampleCounterShallow = lazy(() => import('./pages/examples/counter-shallow'));
+const ExampleSelectorIdentity = lazy(() => import('./pages/examples/selector-identity'));
+const ExampleDerivedBadge = lazy(() => import('./pages/examples/derived-badge'));
+
+const ExampleFetchUsers = lazy(() => import('./pages/examples/fetch-users'));
+const ExampleSearchAbortDedupe = lazy(() => import('./pages/examples/search-abort-dedupe'));
+const ExampleOptimisticRename = lazy(() => import('./pages/examples/optimistic-rename'));
+const ExamplePaginatedList = lazy(() => import('./pages/examples/paginated-list'));
+
+const ExamplePersistPartialize = lazy(() => import('./pages/examples/persist-partialize'));
+const ExampleSubscribeWithSelector = lazy(() => import('./pages/examples/subscribe-with-selector'));
+const ExampleDevtoolsActions = lazy(() => import('./pages/examples/devtools-actions'));
+
+const ExampleSlicesPattern = lazy(() => import('./pages/examples/slices-pattern'));
+const ExampleWizardFactory = lazy(() => import('./pages/examples/wizard-factory'));
+const ExampleModalManager = lazy(() => import('./pages/examples/modal-manager'));
+const ExampleToastQueue = lazy(() => import('./pages/examples/toast-queue'));
+const ExampleFormValidation = lazy(() => import('./pages/examples/form-validation'));
+const ExampleCartTotals = lazy(() => import('./pages/examples/cart-totals'));
+const ExampleResetPatterns = lazy(() => import('./pages/examples/reset-patterns'));
+const ExamplePerfOverselect = lazy(() => import('./pages/examples/perf-overselect'));
+
+const ExampleCrossTabSync = lazy(() => import('./pages/examples/cross-tab-sync'));
+const ExampleSsrNotes = lazy(() => import('./pages/examples/ssr-notes'));
+const ExampleTestingStore = lazy(() => import('./pages/examples/testing-store'));
+const ExampleTypescriptBasic = lazy(() => import('./pages/examples/typescript-basic'));
+
+// // (Optional minis)
+const ExampleSidebar = lazy(() => import('./pages/examples/sidebar'));
+const ExampleThemeSystem = lazy(() => import('./pages/examples/theme-system'));
+const ExampleClipboardShare = lazy(() => import('./pages/examples/clipboard-share'));
+
+const About = lazy(() => import('./pages/about'));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -154,16 +195,47 @@ const App = () => {
                                 </>
 
                                 {/* Examples (placeholders for later) */}
-                                <Route path="/examples" element={<Stub title="Examples" desc="Live demos coming later." />} />
-                                <Route path="/examples/counter" element={<Stub title="Example — Counter (Coming Soon)" />} />
-                                <Route path="/examples/persist-theme" element={<Stub title="Example — Persist Theme (Coming Soon)" />} />
-                                <Route path="/examples/devtools-todos" element={<Stub title="Example — Devtools Todos (Coming Soon)" />} />
-                                <Route path="/examples/subscribe-selector" element={<Stub title="Example — Subscribe + Selector (Coming Soon)" />} />
-                                <Route path="/examples/undo-redo" element={<Stub title="Example — Undo/Redo (Coming Soon)" />} />
+                                <Route path="/examples/counter" element={<ExampleCounter />} />
+                                <Route path="/examples/persist-theme" element={<ExamplePersistTheme />} />
+                                <Route path="/examples/devtools-todos" element={<ExampleDevtoolsTodos />} />
+                                <Route path="/examples/subscribe-selector" element={<ExampleSubscribeSelector />} />
+                                <Route path="/examples/undo-redo" element={<ExampleUndoRedo />} />
+
+                                <Route path="/examples/toggle-label" element={<ExampleToggleLabel />} />
+                                <Route path="/examples/counter-shallow" element={<ExampleCounterShallow />} />
+                                <Route path="/examples/selector-identity" element={<ExampleSelectorIdentity />} />
+                                <Route path="/examples/derived-badge" element={<ExampleDerivedBadge />} />
+
+                                <Route path="/examples/fetch-users" element={<ExampleFetchUsers />} />
+                                <Route path="/examples/search-abort-dedupe" element={<ExampleSearchAbortDedupe />} />
+                                <Route path="/examples/optimistic-rename" element={<ExampleOptimisticRename />} />
+                                <Route path="/examples/paginated-list" element={<ExamplePaginatedList />} />
+
+                                <Route path="/examples/persist-partialize" element={<ExamplePersistPartialize />} />
+                                <Route path="/examples/subscribe-with-selector" element={<ExampleSubscribeWithSelector />} />
+                                <Route path="/examples/devtools-actions" element={<ExampleDevtoolsActions />} />
+
+                                <Route path="/examples/slices-pattern" element={<ExampleSlicesPattern />} />
+                                <Route path="/examples/wizard-factory" element={<ExampleWizardFactory />} />
+                                <Route path="/examples/modal-manager" element={<ExampleModalManager />} />
+                                <Route path="/examples/toast-queue" element={<ExampleToastQueue />} />
+                                <Route path="/examples/form-validation" element={<ExampleFormValidation />} />
+                                <Route path="/examples/cart-totals" element={<ExampleCartTotals />} />
+                                <Route path="/examples/reset-patterns" element={<ExampleResetPatterns />} />
+                                <Route path="/examples/perf-overselect" element={<ExamplePerfOverselect />} />
+
+                                <Route path="/examples/cross-tab-sync" element={<ExampleCrossTabSync />} />
+                                <Route path="/examples/ssr-notes" element={<ExampleSsrNotes />} />
+                                <Route path="/examples/testing-store" element={<ExampleTestingStore />} />
+                                <Route path="/examples/typescript-basic" element={<ExampleTypescriptBasic />} />
+
+                                {/* Optional minis */}
+                                <Route path="/examples/sidebar" element={<ExampleSidebar />} />
+                                <Route path="/examples/theme-system" element={<ExampleThemeSystem />} />
+                                <Route path="/examples/clipboard-share" element={<ExampleClipboardShare />} />
 
                                 {/* Meta */}
-                                <Route path="/changelog" element={<Stub title="Changelog" desc="Release notes & last updated." />} />
-                                <Route path="/about" element={<Stub title="About" desc="Project overview, credits, how to use." />} />
+                                <Route path="/about" element={<About />} />
 
                                 {/* 404 */}
                                 <Route path="*" element={<NotFound />} />

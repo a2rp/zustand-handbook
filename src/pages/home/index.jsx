@@ -45,6 +45,17 @@ const Home = () => {
                 <fieldset>
                     <legend>About Project</legend>
                     <div className='para'>
+                        <p>
+                            Zustand Handbook is a no-nonsense companion for React developers. It focuses on practical
+                            patterns—what to use, why, and what to avoid—so you can model state in clean slices, pick the
+                            right selectors/equality, and ship fast UIs without ceremony.
+                        </p>
+                        <p>
+                            Read the Tutorials in order for the mental model, jump to Notes for quick answers, and use the
+                            Examples as copy-paste starting points. Everything is intentionally small and consistent; where
+                            trade-offs exist, I call them out so you can decide confidently.
+                        </p>
+
                         <div className='section'>
                             <h3>Live: <a href="https://a2rp.github.io/zustand-handbook/home" target='_blank'>a2rp.github.io/zustand-handbook/home</a></h3>
                             <h3>Code: <a href="https://github.com/a2rp/zustand-handbook" target='_blank'>github.com/a2rp/zustand-handbook</a></h3>
