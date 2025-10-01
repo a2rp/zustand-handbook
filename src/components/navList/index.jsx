@@ -232,7 +232,6 @@ const NavListCore = () => {
 
                 {/* Meta */}
                 <h3 className="title">Meta</h3>
-                <NavLink to="/changelog" title="Release notes & last updated">Changelog</NavLink>
                 <NavLink to="/about" title="Project overview, credits, how to use">About</NavLink>
             </div>
 
