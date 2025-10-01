@@ -43,6 +43,7 @@ export const Styled = {
             font-size: 0.95em;
         }
 
+        /* shared note/bad/good blocks */
         pre.note,
         pre.bad,
         pre.good {
@@ -56,12 +57,10 @@ export const Styled = {
             border: 1px dashed ${border};
             background: rgba(255, 255, 255, 0.04);
         }
-
         pre.bad {
             border: 1px solid ${danger};
             background: rgba(239, 68, 68, 0.08);
         }
-
         pre.good {
             border: 1px solid ${accent};
             background: rgba(34, 197, 94, 0.08);
@@ -85,6 +84,26 @@ export const Styled = {
         margin-top: 16px;
     `,
 
+    Table: styled.table`
+        width: 100%;
+        border-collapse: collapse;
+        margin: 8px 0 12px 0;
+        thead th {
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 1px solid ${border};
+            padding: 10px 8px;
+        }
+        tbody td {
+            border-bottom: 1px dashed ${border};
+            padding: 10px 8px;
+            vertical-align: top;
+        }
+        tbody tr:last-child td {
+            border-bottom: 0;
+        }
+    `,
+
     Callout: styled.div`
         margin-top: 8px;
         padding: 10px 12px;
@@ -99,7 +118,7 @@ export const Styled = {
         border: 1px solid ${border};
         border-radius: 12px;
         background: rgba(255, 255, 255, 0.03);
-        display: flex;
+        display: inline-flex;
         align-items: center;
         gap: 12px;
 

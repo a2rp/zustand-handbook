@@ -17,11 +17,41 @@ import 'react-toastify/dist/ReactToastify.css';
 const Home = lazy(() => import('./pages/home'));
 const NotFound = lazy(() => import('./pages/notFound'));
 
-const TutorialsIntro = lazy(() => import('./pages/tutorials/intro'));
-const TutorialsStoreChoices = lazy(() => import('./pages/tutorials/storeChoices'));
-const TutorialsSelectors = lazy(() => import('./pages/tutorials/selectors'));
-const TutorialsSetAndGet = lazy(() => import('./pages/tutorials/setAndGet'));
+const TutorialsIntro = lazy(() => import('./pages/tutorials/Intro'));
+const TutorialsStoreChoices = lazy(() => import('./pages/tutorials/StoreChoices'));
+const TutorialsSelectors = lazy(() => import('./pages/tutorials/Selectors'));
+const TutorialsSetAndGet = lazy(() => import('./pages/tutorials/SetAndGet'));
+const TutorialsDerivedState = lazy(() => import('./pages/tutorials/DerivedState'));
+const TutorialsAsyncFlows = lazy(() => import('./pages/tutorials/AsyncFlows'));
+const TutorialsMiddlewarePersist = lazy(() => import('./pages/tutorials/MiddlewarePersist'));
+const TutorialsPersistMigrations = lazy(() => import('./pages/tutorials/PersistMigrations'));
+const TutorialsMiddlewareDevtools = lazy(() => import('./pages/tutorials/MiddlewareDevtools'));
+const TutorialsSubscribeVsSelector = lazy(() => import('./pages/tutorials/SubscribeVsSelector'));
+const TutorialsSlicesPattern = lazy(() => import('./pages/tutorials/SlicesPattern'));
+const TutorialsMultiStores = lazy(() => import('./pages/tutorials/MultiStores'));
+const TutorialsPerformance = lazy(() => import('./pages/tutorials/Performance'));
+const TutorialsUiPatterns = lazy(() => import('./pages/tutorials/UiPatterns'));
+const TutorialsUndoRedo = lazy(() => import('./pages/tutorials/UndoRedo'));
+const TutorialsCrossTabSync = lazy(() => import('./pages/tutorials/CrossTabSync'));
+const TutorialsSsrNotes = lazy(() => import('./pages/tutorials/SsrNotes'));
+const TutorialsTestingMindset = lazy(() => import('./pages/tutorials/TestingMindset'));
+const TutorialsTypescriptReadiness = lazy(() => import('./pages/tutorials/TypescriptReadiness'));
+const TutorialsProductionChecklist = lazy(() => import('./pages/tutorials/ProductionChecklist'));
 
+const NotesApiQuickRef = lazy(() => import('./pages/notes/ApiQuickRef'));
+const NotesMiddlewaresOverview = lazy(() => import('./pages/notes/MiddlewaresOverview'));
+const NotesSelectorsEquality = lazy(() => import('./pages/notes/SelectorsEquality'));
+const NotesStateModeling = lazy(() => import('./pages/notes/StateModeling'));
+const NotesPerformanceGotchas = lazy(() => import('./pages/notes/PerformanceGotchas'));
+const NotesAsyncPatterns = lazy(() => import('./pages/notes/AsyncPatterns'));
+const NotesPersistChecklist = lazy(() => import('./pages/notes/PersistChecklist'));
+const NotesTestingChecklist = lazy(() => import('./pages/notes/TestingChecklist'));
+const NotesTypescriptMap = lazy(() => import('./pages/notes/TypescriptMap'));
+const NotesTroubleshooting = lazy(() => import('./pages/notes/Troubleshooting'));
+const NotesCheatsheetPrint = lazy(() => import('./pages/notes/CheatsheetPrint'));
+const NotesZustandVsOthers = lazy(() => import('./pages/notes/zustandVsOthers'));
+
+const Glossary = lazy(() => import('./pages/glossary'));
 
 
 const App = () => {
@@ -75,48 +105,53 @@ const App = () => {
                                 <Route path="/" element={<Navigate to="/home" replace />} />
                                 <Route path="/home" element={<Home />} />
 
-                                {/* Tutorials */}
-                                {/* <Route path="/tutorials" element={<Stub title="Tutorials" desc="All tutorial lessons index." />} /> */}
-                                <Route path="/tutorials/intro" element={<TutorialsIntro />} />
-                                <Route path="/tutorials/store-choices" element={<TutorialsStoreChoices />} />
-                                <Route path="/tutorials/selectors" element={<TutorialsSelectors />} />
-                                <Route path="/tutorials/set-and-get" element={<TutorialsSetAndGet />} />
+                                <>
+                                    {/* Tutorials */}
+                                    {/* <Route path="/tutorials" element={<Stub title="Tutorials" desc="All tutorial lessons index." />} /> */}
+                                    <Route path="/tutorials/intro" element={<TutorialsIntro />} />
+                                    <Route path="/tutorials/store-choices" element={<TutorialsStoreChoices />} />
+                                    <Route path="/tutorials/selectors" element={<TutorialsSelectors />} />
+                                    <Route path="/tutorials/set-and-get" element={<TutorialsSetAndGet />} />
+                                    <Route path="/tutorials/derived-state" element={<TutorialsDerivedState />} />
+                                    <Route path="/tutorials/async-flows" element={<TutorialsAsyncFlows />} />
+                                    <Route path="/tutorials/middleware-persist" element={<TutorialsMiddlewarePersist />} />
+                                    <Route path="/tutorials/persist-migrations" element={<TutorialsPersistMigrations />} />
+                                    <Route path="/tutorials/middleware-devtools" element={<TutorialsMiddlewareDevtools />} />
+                                    <Route path="/tutorials/subscribe-vs-selector" element={<TutorialsSubscribeVsSelector />} />
+                                    <Route path="/tutorials/slices-pattern" element={<TutorialsSlicesPattern />} />
+                                    <Route path="/tutorials/multi-stores" element={<TutorialsMultiStores />} />
+                                    <Route path="/tutorials/performance" element={<TutorialsPerformance />} />
+                                    <Route path="/tutorials/ui-patterns" element={<TutorialsUiPatterns />} />
+                                    <Route path="/tutorials/undo-redo" element={<TutorialsUndoRedo />} />
+                                    <Route path="/tutorials/cross-tab-sync" element={<TutorialsCrossTabSync />} />
+                                    <Route path="/tutorials/ssr-notes" element={<TutorialsSsrNotes />} />
+                                    <Route path="/tutorials/testing-mindset" element={<TutorialsTestingMindset />} />
+                                    <Route path="/tutorials/typescript-readiness" element={<TutorialsTypescriptReadiness />} />
+                                    <Route path="/tutorials/production-checklist" element={<TutorialsProductionChecklist />} />
+                                </>
 
-                                <Route path="/tutorials/derived-state" element={<Stub title="Derived State — Computed Values" />} />
-                                <Route path="/tutorials/async-flows" element={<Stub title="Async Flows — Fetching & Thunks" />} />
-                                <Route path="/tutorials/middleware-persist" element={<Stub title="Middleware: persist — Basics" />} />
-                                <Route path="/tutorials/persist-migrations" element={<Stub title="Persist Migrations — Versions & Partialization" />} />
-                                <Route path="/tutorials/middleware-devtools" element={<Stub title="Middleware: devtools — Time-Travel & Trace" />} />
-                                <Route path="/tutorials/subscribe-vs-selector" element={<Stub title="subscribe vs subscribeWithSelector" />} />
-                                <Route path="/tutorials/slices-pattern" element={<Stub title="Slices Pattern — Store Factories" />} />
-                                <Route path="/tutorials/multi-stores" element={<Stub title="Multi-stores — Boundaries & Coupling" />} />
-                                <Route path="/tutorials/performance" element={<Stub title="Performance — Over-selecting & Identity" />} />
-                                <Route path="/tutorials/ui-patterns" element={<Stub title="UI Patterns — Forms, Wizards, Dialogs" />} />
-                                <Route path="/tutorials/undo-redo" element={<Stub title="Undo / Redo — Temporal State" />} />
-                                <Route path="/tutorials/cross-tab-sync" element={<Stub title="Cross-tab Sync — High-level Ideas" />} />
-                                <Route path="/tutorials/ssr-notes" element={<Stub title="SSR Notes — Next.js Theory" />} />
-                                <Route path="/tutorials/testing-mindset" element={<Stub title="Testing Mindset — What & Why" />} />
-                                <Route path="/tutorials/typescript-readiness" element={<Stub title="TypeScript Readiness — Typing the Store" />} />
-                                <Route path="/tutorials/production-checklist" element={<Stub title="Production Checklist — Anti-patterns" />} />
 
-                                {/* Notes */}
-                                <Route path="/notes" element={<Stub title="Notes" desc="Notes index & quick references." />} />
-                                <Route path="/notes/api-quick-ref" element={<Stub title="API Quick Ref — create/set/get/subscribe" />} />
-                                <Route path="/notes/middlewares-overview" element={<Stub title="Middlewares Overview — persist/devtools/subscribeWithSelector/immer" />} />
-                                <Route path="/notes/selectors-equality" element={<Stub title="Selectors & Equality — shallow & custom comparators" />} />
-                                <Route path="/notes/state-modeling" element={<Stub title="State Modeling — Slices, Normalization, Factories" />} />
-                                <Route path="/notes/performance-gotchas" element={<Stub title="Performance Gotchas — Identity Traps" />} />
-                                <Route path="/notes/async-patterns" element={<Stub title="Async Patterns — Loading, Error, Optimistic" />} />
-                                <Route path="/notes/persist-checklist" element={<Stub title="Persist Checklist — Migrations & Storage" />} />
-                                <Route path="/notes/testing-checklist" element={<Stub title="Testing Checklist — What/Where/How" />} />
-                                <Route path="/notes/typescript-map" element={<Stub title="TypeScript Map — Typing Store & Selectors" />} />
-                                <Route path="/notes/troubleshooting" element={<Stub title="Troubleshooting — Common Errors & Fixes" />} />
-                                <Route path="/notes/cheatsheet-print" element={<Stub title="Cheatsheet (Print) — One Pager" />} />
-                                <Route path="/notes/zustand-vs-others" element={<Stub title="Zustand vs Others — When to Pick What" />} />
+                                <>
+                                    {/* Notes */}
+                                    {/* <Route path="/notes" element={<Stub title="Notes" desc="Notes index & quick references." />} /> */}
+                                    <Route path="/notes/api-quick-ref" element={<NotesApiQuickRef />} />
+                                    <Route path="/notes/middlewares-overview" element={<NotesMiddlewaresOverview />} />
+                                    <Route path="/notes/selectors-equality" element={<NotesSelectorsEquality />} />
+                                    <Route path="/notes/state-modeling" element={<NotesStateModeling />} />
+                                    <Route path="/notes/performance-gotchas" element={<NotesPerformanceGotchas />} />
+                                    <Route path="/notes/async-patterns" element={<NotesAsyncPatterns />} />
+                                    <Route path="/notes/persist-checklist" element={<NotesPersistChecklist />} />
+                                    <Route path="/notes/testing-checklist" element={<NotesTestingChecklist />} />
+                                    <Route path="/notes/typescript-map" element={<NotesTypescriptMap />} />
+                                    <Route path="/notes/troubleshooting" element={<NotesTroubleshooting />} />
+                                    <Route path="/notes/cheatsheet-print" element={<NotesCheatsheetPrint />} />
+                                    <Route path="/notes/zustand-vs-others" element={<NotesZustandVsOthers />} />
+                                </>
 
-                                {/* Glossary */}
-                                <Route path="/glossary" element={<Stub title="Glossary" desc="A–Z terms for quick lookups." />} />
-                                {/* Optional future: <Route path="/glossary/:term" element={<GlossaryTerm />} /> */}
+                                <>
+                                    {/* Glossary */}
+                                    <Route path="/glossary" element={<Glossary />} />
+                                </>
 
                                 {/* Examples (placeholders for later) */}
                                 <Route path="/examples" element={<Stub title="Examples" desc="Live demos coming later." />} />

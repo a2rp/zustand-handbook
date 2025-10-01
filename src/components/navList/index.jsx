@@ -184,7 +184,7 @@ const NavListCore = () => {
                 <NavLink to="/glossary" title="Glossary index">Glossary</NavLink>
 
                 {/* Examples (placeholders for later) */}
-                <h3 className="title">Examples (coming later)</h3>
+                <h3 className="title">Examples</h3>
                 <NavLink to="/examples/counter" title="Counter demo (coming soon)">Counter</NavLink>
                 <NavLink to="/examples/persist-theme" title="Persist theme (coming soon)">Persist Theme</NavLink>
                 <NavLink to="/examples/devtools-todos" title="Todos + devtools (coming soon)">Devtools Todos</NavLink>
