@@ -89,4 +89,26 @@ export const Styled = {
         border-radius: 12px;
         background: rgba(255, 255, 255, 0.03);
     `,
+    Table: styled.table`
+        width: 100%;
+        border-collapse: collapse;
+        margin: 8px 0 12px 0;
+
+        thead th {
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 1px solid ${border};
+            padding: 10px 8px;
+        }
+
+        tbody td {
+            border-bottom: 1px dashed ${border};
+            padding: 10px 8px;
+            vertical-align: top;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: 0;
+        }
+    `,
 };
