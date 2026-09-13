@@ -23,7 +23,7 @@ function formatISTLabel(iso) {
         const get = (t) => parts.find((p) => p.type === t)?.value || "";
         return `${get("month")} ${get("day")}, ${get("year")} ${get("hour")}:${get("minute")}:${get("second")} hrs`;
     } catch {
-        return "—";
+        return "â€”";
     }
 }
 
@@ -33,7 +33,7 @@ const LAST_ISO =
     (typeof __APP_BUILD_ISO__ !== "undefined" && __APP_BUILD_ISO__) ||
     null;
 
-const lastUpdatedLabel = LAST_ISO ? formatISTLabel(LAST_ISO) : "—";
+const lastUpdatedLabel = LAST_ISO ? formatISTLabel(LAST_ISO) : "â€”";
 
 
 const Home = () => {
@@ -47,7 +47,7 @@ const Home = () => {
                     <div className='para'>
                         <p>
                             Zustand Handbook is a no-nonsense companion for React developers. It focuses on practical
-                            patterns—what to use, why, and what to avoid—so you can model state in clean slices, pick the
+                            patternsâ€”what to use, why, and what to avoidâ€”so you can model state in clean slices, pick the
                             right selectors/equality, and ship fast UIs without ceremony.
                         </p>
                         <p>
@@ -106,17 +106,6 @@ const Home = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >https://www.ashishranjan.net/</a>
-                                <div className="icon"><TbWorldWww size={20} /></div>
-                            </Col2>
-                        </Row>
-                        <Row>
-                            <Col1>Old Website</Col1>
-                            <Col2>
-                                <a
-                                    href="http://www.ashishranjan.in/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >http://www.ashishranjan.in/</a>
                                 <div className="icon"><TbWorldWww size={20} /></div>
                             </Col2>
                         </Row>

@@ -9,7 +9,7 @@ import NavList from './components/navList';
 
 import ar_logo from "./assets/ar_logo.png";
 
-// ✅ Toasts
+// âœ… Toasts
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -49,7 +49,7 @@ const NotesTestingChecklist = lazy(() => import('./pages/notes/TestingChecklist'
 const NotesTypescriptMap = lazy(() => import('./pages/notes/TypescriptMap'));
 const NotesTroubleshooting = lazy(() => import('./pages/notes/Troubleshooting'));
 const NotesCheatsheetPrint = lazy(() => import('./pages/notes/CheatsheetPrint'));
-const NotesZustandVsOthers = lazy(() => import('./pages/notes/zustandVsOthers'));
+const NotesZustandVsOthers = lazy(() => import('./pages/notes/ZustandVsOthers'));
 
 const Glossary = lazy(() => import('./pages/glossary'));
 
@@ -106,7 +106,7 @@ const App = () => {
                     <Styled.NavLinkWrapper onClick={handleDisplayNav}>
                         <MdMenuOpen size={20} />
                     </Styled.NavLinkWrapper>
-                    <NavLink to="/" title="Zustand Handbook">Zustand Handbook</NavLink>
+                    <NavLink to="/" title="Zustand Handbook"><span className="brandMark">ZH</span><span className="brandCopy"><strong>Zustand Handbook</strong><small>Practical state patterns for React</small></span></NavLink>
                 </Styled.LogoLinkWrapper>
                 <Styled.Heading>
                     <a
@@ -251,7 +251,7 @@ const App = () => {
 
             <ScrollToTop />
 
-            {/* ✅ Toasts live here (rendered once for the whole app) */}
+            {/* âœ… Toasts live here (rendered once for the whole app) */}
             <ToastContainer position="bottom-center" autoClose={4000} newestOnTop />
         </Styled.Wrapper>
     );

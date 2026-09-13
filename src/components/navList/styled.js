@@ -1,75 +1,18 @@
 import styled from "styled-components";
 
 export const Styled = {
-    Nav: styled.div`
-        /* border: 1px solid #f00; */
+    Nav: styled.nav`
         height: 100%;
-        font-family: "Poppins", sans-serif;
-
-        .home,
-        a {
-            color: #aaa;
-            text-decoration: none;
-            display: flex;
-            &:hover {
-                text-decoration: underline;
-                color: #fff;
-            }
-            &.active {
-                color: coral;
-            }
-        }
-
-        .title {
-            margin-top: 15px;
-        }
-
-        .searchWraper {
-            margin-bottom: 15px;
-            position: relative;
-            height: 40px;
-
-            input {
-                width: 100%;
-                height: 100%;
-                outline: none;
-                border: none;
-                border: 1px solid #333;
-                padding: 0 50px 0 15px;
-                background-color: transparent;
-                color: #aaa;
-            }
-
-            .clearIconWrapper {
-                position: absolute;
-                right: 0;
-                top: 0;
-                height: 100%;
-                width: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-            }
-        }
-
-        .navlinksWrapper {
-            /* border: 1px solid #f00; */
-            height: calc(100% - 40px);
-            overflow: auto;
-            overflow-x: hidden;
-            padding-left: 10px;
-            color: #666;
-
-            .title {
-                white-space: nowrap;
-            }
-
-            a {
-                padding-left: 10px;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                white-space: nowrap;
-            }
-        }
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        .searchWraper { position: relative; height: 42px; margin-bottom: 16px; }
+        input { width: 100%; height: 100%; padding: 0 42px 0 13px; color: #f2f7f5; background: #121d28; border: 1px solid rgba(220,240,235,.13); border-radius: 10px; outline: 0; font: inherit; font-size: 12px; transition: .2s; }
+        input::placeholder { color: #71817f; }
+        input:focus { border-color: rgba(126,245,190,.65); box-shadow: 0 0 0 3px rgba(126,245,190,.1); }
+        .clearIconWrapper { position: absolute; top: 0; right: 0; width: 40px; height: 100%; display: grid; place-items: center; color: #8e9f9d; cursor: pointer; }
+        .navlinksWrapper { height: calc(100% - 58px); overflow: auto; padding: 2px 3px 25px; scrollbar-width: thin; }
+        .home, a { display: flex; align-items: center; min-height: 34px; padding: 7px 10px; color: #9baba8; border-radius: 8px; text-decoration: none; font-size: 12px; transition: .18s; }
+        a:hover { color: #f2f7f5; background: rgba(126,245,190,.08); }
+        a.active { color: #07120e; background: #7ef5be; font-weight: 750; }
+        .title { margin: 21px 10px 7px; color: #6f817e; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }
     `,
 };
