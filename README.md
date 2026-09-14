@@ -2,6 +2,8 @@
 
 A practical React and Zustand handbook with focused tutorials, implementation notes, glossary entries, and runnable examples for everyday state-management decisions.
 
+![Zustand Handbook preview](screenshot.png)
+
 ## Includes
 
 - Tutorials for stores, selectors, async flows, middleware, persistence, testing, and performance
