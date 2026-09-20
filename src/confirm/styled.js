@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-const bg = "var(--bg, #0b0b0b)";
 const card = "var(--card, #111)";
 const text = "var(--text, #e9e9e9)";
 const muted = "var(--muted, #b7b7b7)";

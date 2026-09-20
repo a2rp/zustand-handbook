@@ -9,6 +9,7 @@ export const Styled = {
         input::placeholder { color: #71817f; }
         input:focus { border-color: rgba(126,245,190,.65); box-shadow: 0 0 0 3px rgba(126,245,190,.1); }
         .clearIconWrapper { position: absolute; top: 0; right: 0; width: 40px; height: 100%; display: grid; place-items: center; color: #8e9f9d; cursor: pointer; }
+        .matchCount { position: absolute; right: 40px; top: 0; height: 100%; display: flex; align-items: center; color: #7ef5be; font-size: 10px; pointer-events: none; }
         .navlinksWrapper { height: calc(100% - 58px); overflow: auto; padding: 2px 3px 25px; scrollbar-width: thin; }
         .home, a { display: flex; align-items: center; min-height: 34px; padding: 7px 10px; color: #9baba8; border-radius: 8px; text-decoration: none; font-size: 12px; transition: .18s; }
         a:hover { color: #f2f7f5; background: rgba(126,245,190,.08); }

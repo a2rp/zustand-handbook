@@ -64,7 +64,7 @@ const NavListCore = () => {
         // persist search
         try {
             sessionStorage.setItem(STORAGE_KEY, search);
-        } catch { }
+        } catch { /* sessionStorage may be unavailable in private browsing */ }
 
         const root = wrapperRef.current;
         if (!root) return;
@@ -133,6 +133,7 @@ const NavListCore = () => {
                         <MdClear size={20} />
                     </div>
                 )}
+                {search.trim().length > 0 && <span className="matchCount" aria-live="polite">{matchCount} match{matchCount === 1 ? "" : "es"}</span>}
             </div>
 
             <div className="navlinksWrapper" id="navlinksWrapper" ref={wrapperRef}>
@@ -198,7 +199,7 @@ const NavListCore = () => {
                 <NavLink to="/examples/derived-badge" title="Derived badge (coming soon)">Derived Badge</NavLink>
 
                 {/* Async & UX */}
-                <NavLink to="/examples/fetch-users" title="Fetch users — start/success/error (coming soon)">Fetch Users</NavLink>
+                <NavLink to="/examples/fetch-users" title="Fetch users - start/success/error (coming soon)">Fetch Users</NavLink>
                 <NavLink to="/examples/search-abort-dedupe" title="Search with abort & de-dupe (coming soon)">Search: Abort & De-dupe</NavLink>
                 <NavLink to="/examples/optimistic-rename" title="Optimistic rename + rollback (coming soon)">Optimistic Rename</NavLink>
                 <NavLink to="/examples/paginated-list" title="Paginated list & filters (coming soon)">Paginated List</NavLink>
