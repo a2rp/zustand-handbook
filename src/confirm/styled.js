@@ -4,7 +4,7 @@ const card = "var(--card, #111)";
 const text = "var(--text, #e9e9e9)";
 const muted = "var(--muted, #b7b7b7)";
 const border = "var(--border, #222)";
-const accent = "var(--accent, #22c55e)";
+const accent = "var(--accent, #acacac)";
 const radius = "var(--radius, 16px)";
 const shadow = "var(--shadow, 0 8px 30px rgba(0, 0, 0, 0.25))";
 
@@ -32,7 +32,7 @@ export const Styled = {
 
         &[data-variant="danger"] {
             border-color: color-mix(in srgb, #ff5858 40%, ${border});
-            box-shadow: 0 10px 40px rgba(255, 0, 0, 0.12);
+            box-shadow: 0 10px 40px rgba(127, 127, 127, 0.12);
         }
 
         h3 {
@@ -68,7 +68,7 @@ export const Styled = {
 
         button {
             background: ${accent};
-            color: #051a0d;
+            color: #161616;
             border: 1px solid ${accent};
             border-radius: 12px;
             padding: 10px 14px;
@@ -92,9 +92,9 @@ export const Styled = {
         }
 
         .danger {
-            background: #ff5858;
-            color: #2b0e0e;
-            border-color: #ff5858;
+            background: #929292;
+            color: #171717;
+            border-color: #929292;
         }
     `,
 };

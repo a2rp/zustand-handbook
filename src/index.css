@@ -3,7 +3,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html, body, #root { width: 100%; min-width: 320px; min-height: 100%; margin: 0; }
 html { scroll-behavior: smooth; }
-body { background: #070b11; color: #f2f7f5; font-family: "Manrope", ui-sans-serif, system-ui, sans-serif; line-height: 1.6; }
+body { background: #0b0b0b; color: #f6f6f6; font-family: "Manrope", ui-sans-serif, system-ui, sans-serif; line-height: 1.6; }
 button, input { font: inherit; }
-::selection { color: #07120e; background: #7ef5be; }
+::selection { color: #101010; background: #dfdfdf; }
 code, pre { font-family: "DM Mono", monospace; }

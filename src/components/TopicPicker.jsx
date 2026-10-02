@@ -60,7 +60,7 @@ export const TopicPicker = ({ topics, selected, onChange }) => {
                 onKeyDown={onKeyDown}
                 style={{
                     width: "100%",
-                    background: "#0e0f13",
+                    background: "#0f0f0f",
                     color: "var(--text)",
                     border: "1px solid var(--border)",
                     borderRadius: 12,
@@ -83,7 +83,7 @@ export const TopicPicker = ({ topics, selected, onChange }) => {
                         right: 0,
                         maxHeight: 320,
                         overflow: "auto",
-                        background: "#0f1014",
+                        background: "#101010",
                         border: "1px solid var(--border)",
                         borderRadius: 12,
                         padding: 6,

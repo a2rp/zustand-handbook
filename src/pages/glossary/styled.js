@@ -4,7 +4,7 @@ const cardBg = "var(--card, #111)";
 const text = "var(--text, #e9e9e9)";
 const muted = "var(--muted, #b7b7b7)";
 const border = "var(--border, #222)";
-const accent = "var(--accent, #22c55e)";
+const accent = "var(--accent, #acacac)";
 const radius = "var(--radius, 16px)";
 const shadow = "var(--shadow, 0 8px 24px rgba(0,0,0,0.35))";
 

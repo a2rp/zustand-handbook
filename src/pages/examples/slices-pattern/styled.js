@@ -4,8 +4,8 @@ const cardBg = "var(--card, #111)";
 const text = "var(--text, #e9e9e9)";
 const muted = "var(--muted, #b7b7b7)";
 const border = "var(--border, #222)";
-const accent = "var(--accent, #22c55e)";
-const danger = "var(--danger, #ef4444)";
+const accent = "var(--accent, #acacac)";
+const danger = "var(--danger, #848484)";
 const radius = "var(--radius, 16px)";
 const shadow = "var(--shadow, 0 8px 24px rgba(0,0,0,0.35))";
 
@@ -64,11 +64,11 @@ export const Styled = {
         }
         pre.good {
             border: 1px solid ${accent};
-            background: rgba(34, 197, 94, 0.08);
+            background: rgba(172, 172, 172, 0.08);
         }
         pre.bad {
             border: 1px solid ${danger};
-            background: rgba(239, 68, 68, 0.08);
+            background: rgba(132, 132, 132, 0.08);
         }
     `,
 };

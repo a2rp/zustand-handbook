@@ -5,14 +5,14 @@ const Wrapper = styled.div`
     gap: 28px;
     margin-top: 50px;
     padding: 30px 0 8px;
-    color: var(--muted, #8e9f9d);
-    border-top: 1px solid var(--line, rgba(220, 240, 235, .12));
+    color: var(--muted, #9b9b9b);
+    border-top: 1px solid var(--line, rgba(236, 236, 236, .12));
 `;
 
 const Intro = styled.div`
     display: grid;
     gap: 5px;
-    strong { color: var(--text, #f2f7f5); font-size: 16px; }
+    strong { color: var(--text, #f6f6f6); font-size: 16px; }
     span { font-size: 12px; }
 `;
 
@@ -26,9 +26,9 @@ const LinkGroups = styled.div`
 const Group = styled.div`
     display: grid;
     gap: 8px;
-    h3 { margin: 0 0 3px; color: var(--text, #f2f7f5); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+    h3 { margin: 0 0 3px; color: var(--text, #f6f6f6); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
     a { display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; font-size: 12px; transition: color .2s, transform .2s; }
-    a:hover { color: var(--accent, #7ef5be); transform: translateX(3px); }
+    a:hover { color: var(--accent, #dfdfdf); transform: translateX(3px); }
 `;
 
 const Bottom = styled.div`
@@ -37,9 +37,9 @@ const Bottom = styled.div`
     gap: 14px;
     flex-wrap: wrap;
     padding-top: 16px;
-    border-top: 1px solid var(--line, rgba(220, 240, 235, .12));
+    border-top: 1px solid var(--line, rgba(236, 236, 236, .12));
     font-size: 11px;
-    a { color: var(--text, #f2f7f5); }
+    a { color: var(--text, #f6f6f6); }
 `;
 
 export const Styled = { Wrapper, Intro, LinkGroups, Group, Bottom };
