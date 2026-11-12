@@ -14,7 +14,7 @@ A practical React and Zustand handbook with focused tutorials, implementation no
 ## Run locally
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
